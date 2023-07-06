@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  background: hsl(225, 100%, 94%);
+}
+
+p,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  padding: 0 20px;
+}
+@media screen and (min-width: 375px) {
+  .container {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: repeat-x;
+    padding: 0px 20px;
+  }
+}
+@media screen and (min-width: 375px) and (max-height: 650px) {
+  .container {
+    padding: 30px 20px;
+  }
+}
+
+.box {
+  background: #fff;
+  box-shadow: 0 4px 15px -10px gray;
+  border-radius: 20px;
+  max-width: 375px;
+}
+@media screen and (min-width: 375px) {
+  .box {
+    max-width: 450px;
+  }
+}
+
+.image-container {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  text-align: center;
+}
+.content h1 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 20px;
+  padding: 18px 0;
+}
+@media screen and (min-width: 375px) {
+  .content h1 {
+    font-size: 24px;
+    padding: 25px 0 10px 0;
+  }
+}
+.content > p {
+  max-width: 80%;
+  color: hsla(224, 23%, 55%, 0.8);
+  line-height: 1.5;
+  margin: auto;
+}
+
+.option {
+  margin: 35px 20px;
+  padding: 15px;
+  background: hsl(225, 100%, 98%);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 375px) {
+  .option {
+    margin: 20px 40px 30px 40px;
+  }
+}
+.option .plan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+@media screen and (min-width: 375px) {
+  .option .plan {
+    gap: 20px;
+  }
+}
+.option .plan .price p {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+.option .plan .price span {
+  color: hsla(224, 23%, 55%, 0.8);
+}
+.option button {
+  border: none;
+  background: none;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media screen and (min-width: 375px) {
+  .option button {
+    text-decoration: none;
+  }
+}
+.option button:hover {
+  text-decoration: underline;
+}
+
+.music-icon {
+  display: flex;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  padding-bottom: 15px;
+  gap: 15px;
+}
+@media screen and (min-width: 375px) {
+  .buttons {
+    padding: 0 35px;
+    padding-bottom: 20px;
+  }
+}
+.buttons button {
+  border: none;
+  background: none;
+  padding: 15px 0;
+  border-radius: 10px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.buttons .main {
+  color: #fff;
+  border: none;
+  background: hsl(245, 75%, 52%);
+  box-shadow: 0px 15px 10px -15px hsl(245, 75%, 52%);
+}
+.buttons .main:hover {
+  opacity: 0.7;
+}
+.buttons .secondary {
+  color: hsla(224, 23%, 55%, 0.8);
+}
+.buttons .secondary:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+/*# sourceMappingURL=output.css.map */
